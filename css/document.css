@@ -1,0 +1,397 @@
+/*
+-----------------------------------------------
+Document Styles
+-----------------------------------------------
+Print to PDF Styles
+file:       /css/document.css
+author:     Stephen Bau
+date:       27 July 2010
+----------------------------------------------- */
+
+
+/* Links
+----------------------------------------------- */
+a {
+	color: #2A8CC8;
+}
+
+
+/* Typography
+----------------------------------------------- */
+h1 {font-size: 2.2em}
+h2 {font-size: 1.8em}
+h3 {font-size: 1.6em}
+h4 {font-size: 1.4em}
+h5 {font-size: 1.2em}
+h6 {font-size: 1em}
+
+h1, h2, h3, h4, h5, h6 {line-height: 1.2em}
+
+p {
+	margin: 1em 0;
+}
+
+ul {
+	margin-left: 18pt;
+	padding-left: 24pt;
+}
+
+
+/* Cover
+----------------------------------------------- */
+#cover {
+	min-height: 432px;
+}
+#cover .section {
+	margin-left: 160pt;
+}
+#cover h1,
+#cover h2,
+#cover h3 {
+	margin-left: 0;
+}
+#cover .section h2 strong {
+	font-weight: normal;
+	color: #2A8CC8;
+}
+#cover .logo {
+	margin: 0 0 150pt -12pt;
+}
+#cover h2 {
+	margin-bottom: 1em;
+}
+#cover .credit {
+	margin-top: 240pt;
+}
+#cover .section h3 {
+	font-size: 1em;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #2A8CC8;
+	margin-top: 3em;
+	margin-bottom: 1em;
+}
+#cover .section span {
+	display:inline;
+	float:none;
+	width:auto;
+	color: #000;
+}
+#cover p.footnote {
+	margin-top: 3em;
+	padding-top: 1em;
+	font-size: 1em;
+	color: #666;
+	border-top: 1px solid #222;
+	position: absolute;
+	bottom: 36px;
+	width: 380pt;
+}
+#cover p.contact-name-org {
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+
+/* Sections
+----------------------------------------------- */
+.section h1,
+.section h2,
+.section h3 {
+	margin-left: -36px;
+}
+
+/*
+.section h1 {
+	margin-bottom: 1em;
+	font-weight: normal;
+}
+.section h2 {
+	margin-bottom: 1em;
+	font-weight: normal;
+}
+.section h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #2A8CC8;
+	margin-top: 1.5em;
+	margin-bottom: .5em;
+}
+.section h4 {
+	margin-bottom: 1em;
+}
+.section h5 {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+.section p {
+	margin-bottom: 1em;
+}
+.section h2 span,
+.section h3 span,
+.section h4 span {
+	color: #000;
+}
+.section h2 strong {
+	font-weight: normal;
+	color: #2A8CC8;
+}
+.section h4,
+.section h5,
+.section h6 {
+	margin-left: 36pt;
+}
+.section p {
+	margin-left: 36pt;
+	margin-bottom: 1em;
+}
+.section ol,
+.section ul {
+	margin-left: 36pt;
+	margin-top: .5em;
+	margin-bottom: 1em;
+}
+.section ol ol,
+.section ul ul,
+.section ul ol,
+.section ol ul {
+	margin-left: 18pt;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.section ul li {
+	list-style-type: square;
+}
+.section ol ol li {
+	list-style-type: lower-alpha;
+}
+.section ol ol ol li {
+	list-style-type: lower-roman;
+}
+.section hr {
+	color: #fff;
+	background: transparent;
+	height: 0;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	margin: 2em 0;
+}
+.section table {
+	margin-left: 36pt;
+	margin-bottom: 2em;
+	width: 90%;
+	float: none;
+}
+.section table th {
+	font-weight: bold;
+}
+.section table thead tr th {
+	background: #2A8CC8;
+	color: #fff;
+}
+.section table col.cost {
+	width: 30%;
+}
+.section table tr.odd {
+	background: #dbeefa;
+}
+.section table tr.total {
+	background: #a7d1eb;
+	text-transform: uppercase;
+}
+.section table tr.total td {
+	border-top: 1px solid #2A8CC8;
+}
+.section pre {
+	margin-left: 36pt;
+}
+.section blockquote {
+	margin-left: 36pt;
+	padding: 12px 24px 12px 12px;
+	background: #dbeefa;
+	border-left: 4px solid #a7d1eb;
+}
+.section blockquote p {
+	margin: 0;
+	padding: 0;
+}
+*/
+
+/* Lists
+----------------------------------------------- */
+.lists ul li.subsection a {
+	padding-left: 42px;
+	background-position: 24px 1px;
+}
+.lists ul li.subsection a:hover {
+	background-position: 24px -95px;
+}
+.lists ul li.subsection a.current,
+.lists ul li.subsection a.current:hover,
+.lists ul li.subsection a:active,
+.lists ul li.subsection a.current:active {
+	background-position: 24px -192px;
+}
+.lists ul li.subsubsection a {
+	padding-left: 60px;
+	background-position: 42px 1px;
+}
+.lists ul li.subsubsection a:hover {
+	background-position: 42px -95px;
+}
+.lists ul li.subsubsection a.current,
+.lists ul li.subsubsection a.current:hover,
+.lists ul li.subsubsection a:active,
+.lists ul li.subsubsection a.current:active {
+	background-position: 42px -192px;
+}
+
+
+/* Forms
+----------------------------------------------- */
+form textarea {
+	height: auto;
+}
+table.form tbody tr td input[type="text"] {
+	width: 98%;
+}
+table.form tbody tr td.sort input {
+	width: 2em;
+}
+table.form tbody tr td input[type="submit"] {
+	margin-right: 8px;
+}
+table.form col.sort,
+table.form col.total {
+	width: 3em;
+}
+table.form col.submit {
+	width: 4em;
+}
+table.form tbody tr td.total {
+	text-align: center;
+}
+
+
+/* Tables
+----------------------------------------------- */
+table {
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: .25em .5em;
+}
+tbody td {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+th {
+	text-align: left;
+}
+
+
+/* Notices
+----------------------------------------------- */
+#notice {
+	float: left;
+	width: 100%;
+	background: #a7d1eb;
+}
+#notice p {
+	padding: .5em 1em;
+}
+
+
+/* Code
+----------------------------------------------- */
+pre {
+  padding: 2em;
+  background: #eee;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+}
+/*
+pre {
+	white-space: normal;
+}
+pre code {
+	display: block;
+	white-space: pre;
+}
+*/
+#export-xml form {
+	padding: 1.5em 1.5em 1em 1.5em;
+}
+
+
+/* Signatures
+----------------------------------------------- */
+table.signatures {
+	margin-top:4em;
+}
+table.signatures td {
+	font-size:.8em;
+	border-bottom:none;
+	border-top:1px solid #ccc;
+	border-right:6px solid #fff;
+	padding:0;
+	padding-bottom:3em;
+}
+
+
+/* Proposal Info
+----------------------------------------------- */
+.proposal-info {
+	float: left;
+	margin-top: 139pt;
+	margin-left: 36pt;
+	width: 140px;
+	font-size: 8pt;
+	line-height: 20px;
+}
+.proposal-info h3 {
+	font-size: 8pt;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 0;
+	margin-top: 12pt;
+}
+.proposal-info p {
+	margin: 0;
+}
+
+
+/* Page Header
+----------------------------------------------- */
+#page-header {
+	margin-bottom: 64pt;
+}
+
+
+/* TOC
+----------------------------------------------- */
+.section #toc ul {
+	padding: 0;
+	margin: 0 0 1em;
+}
+.section #toc ul li {
+	list-style: none;
+	font-weight: bold;
+}
+.section #toc ul li ul {
+	padding: 0 0 0 18pt;
+	margin: 0;
+}
+.section #toc ul li ul li {
+	font-weight: normal;
+}
+
+
+/* Team photos
+----------------------------------------------- */
+.team img {
+	float: left;
+	margin: 6pt 12pt 6pt 36pt;
+}

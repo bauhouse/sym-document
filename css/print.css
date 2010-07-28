@@ -1,0 +1,34 @@
+/*
+-----------------------------------------------
+Print Styles
+-----------------------------------------------
+Print to PDF Styles
+file:       /css/print.css
+author:     Stephen Bau
+date:       27 July 2010
+----------------------------------------------- */
+
+
+/* Base Print Styles
+----------------------------------------------- */
+body {
+	margin: 0;
+}
+.page {
+	margin-top: 0;
+	page-break-before: always;
+	-webkit-box-shadow: none;
+}
+#cover {
+	page-break-before: auto;
+}
+.content {
+	overflow: hidden;
+}
+
+
+/* Print Button
+----------------------------------------------- */
+.printable {
+	display: none;
+}

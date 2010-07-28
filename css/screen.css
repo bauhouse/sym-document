@@ -1,0 +1,98 @@
+/*
+-----------------------------------------------
+Screen Styles
+-----------------------------------------------
+Print to PDF Styles
+file:       /css/screen.css
+author:     Stephen Bau
+date:       27 July 2010
+----------------------------------------------- */
+
+
+/* Base Screen Styles
+----------------------------------------------- */
+body {
+	font: normal 75%/1.5em Helvetica, Arial, Verdana, sans-serif;
+	background: #999;
+	padding: 0;
+	margin: 4em 0 24px;
+}
+.page {
+	width: 576pt;
+	height: 756pt;
+	padding: 18pt;
+	margin: 0 auto;
+	background: #fff;
+	margin-top: 24px;
+	-moz-box-shadow: 0 2px 10px #333;
+	-webkit-box-shadow: 0 2px 10px #333;
+	box-shadow: 0 2px 10px #333;
+}
+.margins {
+	width: 576pt;
+	height: 756pt;
+}
+.content {
+	width: 540pt;
+	height: 720pt;
+	padding: 2pt;
+	margin: 16pt;
+	overflow: auto;
+}
+img {
+	border: none;
+}
+
+
+/* page
+----------------------------------------------- */
+.page {
+	position: relative;
+}
+.section {
+	margin-left: 196pt;
+	margin-top: 36pt;
+}
+
+/* branding
+----------------------------------------------- */
+.branding {
+	position: absolute;
+	left: 36pt;
+	top: 68pt;
+}
+
+
+/* document info (footers)
+----------------------------------------------- */
+.section p.document-info {
+	position: absolute;
+	left: 196pt;
+	bottom: 36pt;
+	margin: 0;
+	width: 380pt;
+}
+.section p.document-info .page_num {
+	float: right;
+}
+
+
+/* Print Button
+----------------------------------------------- */
+.printable {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	width: 100%;
+}
+.printable a {
+	display: block;
+	padding: .5em 1em;
+	color: #fff;
+	background: #333;
+	text-decoration: none;
+	text-align: right;
+}
+.printable a:hover {
+	background: #000;
+}
