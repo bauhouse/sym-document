@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<title>Document | Symphony</title>
+	<link rel="stylesheet" type="text/css" href="./css/screen.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="./css/document.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="./css/print.css" media="print" />
+</head>
+
+<body>
+	<div class="printable pdf">
+		<a href="#print">PDF for Printing</a>
+	</div>
+
+	<div id="document">
+
+		<div class="page" id="cover">
+			<div class="content">
+				<div class="section">
+					<div class="logo">
+						<object data="svg/symphony.svg" width="400" height="91" type="image/svg+xml" 
+							codebase="http://www.adobe.com/svg/viewer/install/"></object>
+					</div>
+					<h1>Symphony 2.1.0</h1>
+					<h2>Documentation</h2>
+					<p class="credit">Edited by<br />
+					<strong>Stephen Bau</strong><br />
+					Lead Designer<br />
+					Domain7 Solutions Inc</p>
+					<p>July 27, 2010</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="page" id="p1">
+			<div class="content">
+				<div class="branding">
+					<object data="svg/symphony.svg" width="166" height="37" type="image/svg+xml" 
+						codebase="http://www.adobe.com/svg/viewer/install/"></object>
+				</div>
+				<div class="section">
+					<h1>Hello World: A Basic XSL Stylesheet</h1>
+					<p>Developing a site with Symphony CMS starts with a basic XSL stylesheet.
+					This is the traditional “Hello, world” example.</p>
+					<h2>Page</h2>
+					<p>First, create the home page. Navigate to Blueprints : Pages and click on the Create New button.</p>
+					<h3>The Index Page</h3>
+					<p>The index page is a special type of page that is designated as the root of your site. 
+					There can only be one page with a type of <code>index</code>. If the home page does not have the 
+					<code>index</code> page type assigned to it, Symphony will throw an error:</p>
+					<blockquote>
+						<p>The page you requested does not exist.</p>
+					</blockquote>
+					<p>Other pages do not require a page type, so, for all other pages, the Page Type field is optional.</p>
+					<h4>URL Handle</h4>
+					<p>The URL handle is the text string that can be used to identify an entry in a URL. 
+					If you do not specify a URL handle, Symphony automatically modifies the string supplied in 
+					the Title field, transforming uppercase characters to lowercase characters and turning space 
+					characters into hyphens to create the handle.</p>
+					<p>Use the following settings to configure the page:</p>
+					<h5>URL Settings</h5>
+					<ul>
+						<li>Parent Page: /</li>
+						<li>URL Handle: home</li>
+						<li>URL Parameters: (none)</li>
+					</ul>
+					<h5>Page Metadata</h5>
+					<ul>
+						<li>Events: (none)</li>
+						<li>Data Sources: (none)</li>
+						<li>Page Type: index <strong>(this is important)</strong></li>
+					</ul>
+					<p class="document-info">
+						<strong>Symphony CMS</strong> &ndash; Documentation
+						<span class="page_num">1</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="page" id="p2">
+			<div class="content">
+				<div class="branding">
+					<object data="svg/symphony.svg" width="166" height="37" type="image/svg+xml" 
+						codebase="http://www.adobe.com/svg/viewer/install/"></object>
+				</div>
+				<div class="section">
+					<h5>Page Data</h5>
+					<ul>
+						<li>Title: Home</li>
+						<li>Body: (see the page template below)</li>
+						<li>Utilities: (none)</li>
+					</ul>
+					<h2>The Page Template</h2>
+					<p>Symphony uses XSLT as its templating system. XSLT is a W3C recommendation.
+					It’s strength is in its ability to transform XML into XML, Text, HTML or XHTML
+					with the ability to use conditionals, recursion, and a number of math and string
+					manipulation functions. This skeleton XSL stylesheet provides the minimum necessary
+					to create a web page with an XHTML 1.0 Strict doctype.</p>
+					<pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+
+&lt;xsl:output method="xml"
+doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
+doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+omit-xml-declaration="yes"
+encoding="UTF-8"
+indent="yes" /&gt;
+
+&lt;xsl:template match="/"&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Hello&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Hello, world&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/xsl:template&gt;
+
+&lt;/xsl:stylesheet&gt;
+</pre>
+					<p>View the example <a href="/workspace/pages/tutorials_examples_hello.xsl">XSLT template</a> and <a href="/tutorials/examples/hello/">HTML output</a>.</p>
+					<p>So, you can have one XSL stylesheet that contains several XSL templates that do a number of different things. But, we’ll find out about that later. Just be aware that everything is based on XML, so everything has to be “well-formed” or “valid” XML. And that includes the HTML.</p>
+					<p class="document-info">
+						<strong>Symphony CMS</strong> &ndash; Documentation
+						<span class="page_num">2</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
