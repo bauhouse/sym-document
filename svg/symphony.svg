@@ -3,6 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="100%" height="100%" viewBox="0 0 735 138" xml:space="preserve">
+<a xlink:href="http://symphony-cms.com">
 <g>
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="#B40B51" d="M714.982,70.838c10.645,0,19.27,8.625,19.27,19.27
 		s-8.625,19.277-19.27,19.277c-10.652,0-19.277-8.633-19.277-19.277S704.33,70.838,714.982,70.838L714.982,70.838z"/>
@@ -42,4 +43,5 @@
 		c5.309,0,7.965,1.92,9.883,7.082l14.758,37.621c1.477,3.84,2.652,10.035,2.652,10.035h0.293c0,0,1.184-6.195,2.508-10.035
 		l12.836-37.621c1.773-5.162,4.875-7.082,10.035-7.082h12.684v15.934H693.115L693.115,47.213z"/>
 </g>
+</a>
 </svg>
