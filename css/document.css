@@ -311,6 +311,7 @@ pre {
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;
   border-radius: 1em;
+  overflow: hidden;
 }
 /*
 pre {
